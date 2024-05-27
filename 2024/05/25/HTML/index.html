@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="HTML一、HTML段落&lt;p&gt;这是一个段落。&lt;&#x2F;p&gt; &lt;p&gt;这是另外一个段落。&lt;&#x2F;p&gt;  二、HTML链接&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.runoob.com&quot;&gt;这是一个链接&lt;&#x2F;a&gt;  在 href 属性中指定链接的地址。 三、HTML图片&lt;img src&#x3D;&quot;&#x2F;images&#x2F;log">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML">
+<meta property="og:url" content="https://ellleven.github.io/2024/05/25/HTML/index.html">
+<meta property="og:site_name" content="Ellleven&#39;s Blog">
+<meta property="og:description" content="HTML一、HTML段落&lt;p&gt;这是一个段落。&lt;&#x2F;p&gt; &lt;p&gt;这是另外一个段落。&lt;&#x2F;p&gt;  二、HTML链接&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.runoob.com&quot;&gt;这是一个链接&lt;&#x2F;a&gt;  在 href 属性中指定链接的地址。 三、HTML图片&lt;img src&#x3D;&quot;&#x2F;images&#x2F;log">
+<meta property="og:locale">
+<meta property="og:image" content="https://ellleven.github.io/img/404.jpg">
+<meta property="og:image" content="https://ellleven.github.io/img/404.jpg">
+<meta property="article:published_time" content="2024-05-25T13:13:08.000Z">
+<meta property="article:modified_time" content="2024-05-27T12:20:38.383Z">
+<meta property="article:author" content="Ellleven">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ellleven.github.io/img/404.jpg">
+
+
+<title >HTML</title>
+
+<!-- Favicon -->
+
+    <link href='/img/favicon.svg?v=2.1.15' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/img/favicon.svg?v=2.1.15' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"ellleven.github.io","author":"Ellleven","root":"/","typed_text":["Web Developer"],"theme_version":"2.1.15","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","weixin":"fas fa-weixin"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"05/16/2024 00:00:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":true,"el":".trm-banner","avatar":true,"delayRange":4000,"speed":80},"creative_commons":{"license":"by-nc-sa","language":"deed.zh"},"notice_outdate":{"enable":true,"style":"flat","limit_day":30,"position":"top"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-05-27 20:20:38"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.15" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        <img alt="logo" src="/img/favicon.svg">
+    
+    
+        <div class="trm-logo-text">
+            雁渡<span>寒潭</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+                <ul>
+                    
+                    <li>
+                        <a  href="/archives2/" target="">
+                            archives2
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a data-no-swup href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/links/" target="">
+                    友链
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/projects/" target="">
+                    项目
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            HTML
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar trm-light-icon" src="/img/avatar.jpg"> <img alt="Avatar" class="trm-avatar trm-dark-icon" src="/img/dark_avatar.jpg">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        Ellleven
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/ellleven" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="/img/code.jpg" title="weixin" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+    <a href="img/xhs.png" title="xhs" rel="nofollow" target="_blank">
+        <img src="img/xhs.svg">
+    </a>
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                CITY:
+            </div>
+            <div class="trm-label trm-label-light">
+                ChengDu
+            </div>
+        </li>
+    
+    
+</ul>
+<div style="width: 100%;margin-top: 10px;">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" style="display: block; width:100%;" height=52 src="//music.163.com/outchain/player?type=2&id=562598081&auto=0&height=32"></iframe>
+</div>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:2645979202@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            05/25
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            21:13
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Ellleven
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="一、HTML段落"><a href="#一、HTML段落" class="headerlink" title="一、HTML段落"></a>一、HTML段落</h3><pre><code>&lt;p&gt;这是一个段落。&lt;/p&gt;
+&lt;p&gt;这是另外一个段落。&lt;/p&gt;
+</code></pre>
+<h3 id="二、HTML链接"><a href="#二、HTML链接" class="headerlink" title="二、HTML链接"></a>二、HTML链接</h3><pre><code>&lt;a href=&quot;https://www.runoob.com&quot;&gt;这是一个链接&lt;/a&gt;
+</code></pre>
+<p>在 href 属性中指定链接的地址。</p>
+<h3 id="三、HTML图片"><a href="#三、HTML图片" class="headerlink" title="三、HTML图片"></a>三、HTML图片</h3><p><code>&lt;img src=&quot;/images/logo.png&quot; width=&quot;258&quot; height=&quot;39&quot; /&gt;</code></p>
+<img src="/images/logo.png" width="258" height="39"  loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'/>
+### 四、HTML元素
+HTML 元素是由标签和内容组成的。
+
+<p>HTML 标签是由尖括号包围的关键字，比如 &lt; html&gt;、&lt; body&gt;、&lt; p&gt; 等。</p>
+<h4 id="1、HTML文档实例"><a href="#1、HTML文档实例" class="headerlink" title="1、HTML文档实例"></a>1、HTML文档实例</h4><figure class="highlight plaintext"><figcaption><span>html></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;元素定义了整个 HTML 文档</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;我的网页&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;定义一个文章主体</span><br><span class="line">&lt;h1&gt;这是一级标题&lt;/h1&gt;</span><br><span class="line">&lt;h2&gt;这是二级标题&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">&lt;a href=&quot;https://www.runoob.com&quot;&gt;这是一个链接&lt;/a&gt;</span><br><span class="line">&lt;img src=&quot;/images/logo.png&quot; width=&quot;258&quot; height=&quot;39&quot; /&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>这个元素拥有一个开始标签 <html> ，以及一个结束标签 </html>.<br>元素内容是另一个 HTML 元素（body 元素）。</p>
+<p>  &lt; br&gt; 就是没有关闭标签的空元素（&lt; br&gt; 标签定义换行）。<br>  在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。<br>  在开始标签中添加斜杠，比如 &lt; br &#x2F;&gt;，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。<br>  即使 &lt; br&gt; 在所有浏览器中都是有效的，但使用 &lt; br &#x2F;&gt; 其实是更长远的保障。</p>
+<h3 id="五、HTML属性"><a href="#五、HTML属性" class="headerlink" title="五、HTML属性"></a>五、HTML属性</h3><p>实例：<br>HTML 链接由 &lt; a&gt; 标签定义。链接的地址在 href 属性中指定：</p>
+<pre><code>&lt;a href=&quot;https://www.runoob.com&quot;&gt;这是一个链接&lt;/a&gt;
+</code></pre>
+<p>属性值应该始终被包括在引号内。<br>双引号是最常用的，不过使用单引号也没有问题。</p>
+<p>查看完整的HTML属性列表: <a href="https://www.runoob.com/html/html-attributes.html" target="_blank">HTML 标签参考手册。</a></p>
+<h3 id="六、HTML标题"><a href="#六、HTML标题" class="headerlink" title="六、HTML标题"></a>六、HTML标题</h3><p>HTML 标题由 &lt; h1&gt; 到 &lt; h6&gt; 六个级别的标签定义。</p>
+<p>&lt; h1&gt; 标签定义一级标题，&lt; h2&gt; 定义二级标题，以此类推。</p>
+<p>1到6号标题与1到6号字体逆序对应，比如1号字体对应6号标题，2号字体对应5号标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;这是1号标题&lt;/h1&gt;</span><br><span class="line">&lt;font size=&quot;6&quot;&gt;这是6号字体文本&lt;/font&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;这是2号标题&lt;/h2&gt;</span><br><span class="line">&lt;font size=&quot;5&quot;&gt;这是5号字体文本&lt;/font&gt;</span><br><span class="line"></span><br><span class="line">&lt;h3&gt;这是3号标题&lt;/h3&gt;</span><br><span class="line">&lt;font size=&quot;4&quot;&gt;这是4号字体文本&lt;/font&gt;</span><br><span class="line"></span><br><span class="line">&lt;h4&gt;这是4号标题&lt;/h4&gt;</span><br><span class="line">&lt;font size=&quot;3&quot;&gt;这是3号字体文本&lt;/font&gt;</span><br><span class="line"></span><br><span class="line">&lt;h5&gt;这是5号标题&lt;/h5&gt;</span><br><span class="line">&lt;font size=&quot;2&quot;&gt;这是2号字体文本&lt;/font&gt;</span><br><span class="line"></span><br><span class="line">&lt;h6&gt;这是6号标题&lt;/h6&gt;</span><br><span class="line">&lt;font size=&quot;1&quot;&gt;这是1号字体文本&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+
+<h1>这是1号标题</h1>
+<font size="6">这是6号字体文本</font>
+
+<h2>这是2号标题</h2>
+<font size="5">这是5号字体文本</font>
+
+<h3>这是3号标题</h3>
+<font size="4">这是4号字体文本</font>
+
+<h4>这是4号标题</h4>
+<font size="3">这是3号字体文本</font>
+
+<h5>这是5号标题</h5>
+<font size="2">这是2号字体文本</font>
+
+<h6>这是6号标题</h6>
+<font size="1">这是1号字体文本</font>
+#### 1、HTML水平线
+HTML水平线由 < hr> 标签定义。
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr&gt;</span><br><span class="line">&lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;hr&gt;</span><br><span class="line">&lt;p&gt;这是一个段落。&lt;/p&gt; </span><br></pre></td></tr></table></figure>
+< hr> 标签定义水平线，可以用来分隔内容。
+<p>这是一个段落。</p>
+<hr>
+<p>这是一个段落。</p>
+
+<h4 id="2、HTML注释"><a href="#2、HTML注释" class="headerlink" title="2、HTML注释"></a>2、HTML注释</h4><p><code>&lt;!-- 这是一个注释 --&gt;</code></p>
+<p>注释: 开始括号之后（左边的括号）需要紧跟一个叹号 ! (英文标点符号)，结束括号之前（右边的括号）不需要</p>
+<h3 id="七、HTML段落"><a href="#七、HTML段落" class="headerlink" title="七、HTML段落"></a>七、HTML段落</h3><p>HTML段落由 &lt; p&gt; 标签定义。<br>折行  &lt; br&gt; 标签</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;这个&lt;br&gt;段落&lt;br&gt;演示了分行的效果&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="八、HTML文本格式化"><a href="#八、HTML文本格式化" class="headerlink" title="八、HTML文本格式化"></a>八、HTML文本格式化</h3><p>HTML文本格式化标签:<br>HTML 使用标签 &lt; b&gt;(“bold”) 与 &lt; i&gt;(“italic”) 对输出的文本进行格式, 如：粗体 or 斜体</p>
+<pre><code>通常标签 &lt;strong&gt; 替换加粗标签 &lt;b&gt; 来使用, &lt;em&gt; 替换 &lt;i&gt;标签使用。
+然而，这些标签的含义是不同的：
+&lt;b&gt; 与&lt;i&gt; 定义粗体或斜体文本。
+&lt;strong&gt; 或者 &lt;em&gt;意味着你要呈现的文本是重要的，所以要突出显示。
+这些HTML标签被称为格式化标签
+</code></pre>
+<p><a href="https://www.runoob.com/html/html-formatting.html" target="_blank">HTML 格式化标签参考手册。</a></p>
+<h3 id="九、HTML链接"><a href="#九、HTML链接" class="headerlink" title="九、HTML链接"></a>九、HTML链接</h3><p>HTML链接由 &lt; a&gt; 标签定义。</p>
+<p>默认情况下，链接将以以下形式出现在浏览器中：</p>
+<p>一个未访问过的链接显示为蓝色字体并带有下划线。<br>访问过的链接显示为紫色并带有下划线。<br>点击链接时，链接显示为红色并带有下划线。<br>注意：如果为这些超链接设置了 CSS 样式，展示样式会根据 CSS 的设定而显示。</p>
+<p>HTML链接的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;http://www.runoob.com&quot;&gt;This is a link&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>href 属性指定链接的地址。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;http://www.runoob.com&quot;&gt;This is a link&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="十、HTML图片"><a href="#十、HTML图片" class="headerlink" title="十、HTML图片"></a>十、HTML图片</h3><p>HTML图片由 &lt; img&gt; 标签定义。</p>
+<p>HTML图片的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;url&quot;&gt;链接文本&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>href：指定链接目标的URL，这是链接的最重要属性。可以是另一个网页的URL、文件的URL或其他资源的URL。</li>
+<li>target（可选）：指定链接如何在浏览器中打开。常见的值包括 _blank（在新标签或窗口中打开链接）和 _self（在当前标签或窗口中打开链接）。</li>
+<li>title（可选）：提供链接的额外信息，通常在鼠标悬停在链接上时显示为工具提示。</li>
+<li>rel（可选）：指定与链接目标的关系，如 nofollow、noopener 等。</li>
+<li>type（可选）：指定链接的媒体类型，如 image&#x2F;jpeg、video&#x2F;mp4 等。</li>
+</ul>
+<p>文本链接：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://www.example.com&quot;&gt;访问示例网站&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>图像链接：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://www.example.com&quot;&gt;&lt;img src=&quot;https://www.example.com/image.jpg&quot; alt=&quot;示例图片&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>锚点链接：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;#section2&quot;&gt;跳转到第二部分&lt;/a&gt;</span><br><span class="line">&lt;!-- 在页面中的某个位置 --&gt;</span><br><span class="line">&lt;a name=&quot;section2&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>下载链接：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;document.pdf&quot; download&gt;下载文档&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>target属性：<br>可以定义被链接的文档在何处显示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://github.com/Ellleven/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;访问我的blog!&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>如果将 target 属性设置为 “_blank”, 链接将在新窗口打开。</p>
+<p>创建电子邮件链接：<br><!DOCTYPE html></p>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p>
+这是我的邮件链接：
+<a href="2645979202@qq.com?Subject=Hello%20again" target="_top">
+发送邮件</a>
+</p>
+
+<p>
+<b>注意:</b> 单词之间空格使用 %20 代替，以确保浏览器可以正常显示文本。
+</p>
+
+</body>
+</html>
+
+<h3 id="十一、HTML头部"><a href="#十一、HTML头部" class="headerlink" title="十一、HTML头部"></a>十一、HTML头部</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt; </span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt; </span><br><span class="line">&lt;title&gt;文档标题&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"> </span><br><span class="line">&lt;body&gt;</span><br><span class="line">文档内容......</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>&lt; head&gt; 元素包含了所有的头部标签元素。在  <head>元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。</p>
+<p>可以添加在头部区域的元素标签为: &lt; title&gt;, &lt; style&gt;, &lt; meta&gt;, &lt; link&gt;, &lt; script&gt;, &lt; noscript&gt; 和 &lt; base&gt;。</p>
+<h4 id="1、-title-元素"><a href="#1、-title-元素" class="headerlink" title="1、&lt; title&gt; 元素"></a>1、&lt; title&gt; 元素</h4><p>&lt; title&gt; 元素定义了文档的标题，显示在浏览器的标题栏或标签页上。</p>
+<h4 id="2、-style-元素"><a href="#2、-style-元素" class="headerlink" title="2、&lt; style&gt; 元素"></a>2、&lt; style&gt; 元素</h4><p>&lt; style&gt; 元素定义了文档的样式。</p>
+<pre><code>&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+body &#123;
+background-color:yellow;
+&#125;
+p &#123;
+color:blue
+&#125; 
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+<h4 id="3、-meta-元素"><a href="#3、-meta-元素" class="headerlink" title="3、&lt; meta&gt; 元素"></a>3、&lt; meta&gt; 元素</h4><p>&lt; meta&gt; 元素提供有关页面的元信息。</p>
+<p>为搜索引擎定义关键词:</p>
+<pre><code>&lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, XML, XHTML, JavaScript&quot;&gt;
+</code></pre>
+<p>为网页定义描述内容:<br>    <meta name="description" content="免费 Web & 编程 教程"></p>
+<p>定义网页作者:<br>    <meta name="author" content="Runoob"></p>
+<p>每30秒钟刷新当前页面:<br>    <meta http-equiv="refresh" content="30"></p>
+<h4 id="4、-link-元素"><a href="#4、-link-元素" class="headerlink" title="4、&lt; link&gt; 元素"></a>4、&lt; link&gt; 元素</h4><p>&lt; link&gt; 元素定义文档与外部资源的关系,通常用于链接到样式表:</p>
+<pre><code>&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt; 
+</code></pre>
+<h4 id="5、-script-元素"><a href="#5、-script-元素" class="headerlink" title="5、&lt; script&gt; 元素"></a>5、&lt; script&gt; 元素</h4><p>&lt; script&gt; 元素定义客户端脚本。<br>例如通过 JavaScript 输出 “Hello world”：</p>
+<pre><code>&lt;script&gt;
+document.write(&quot;Hello World!&quot;)
+&lt;/script&gt;
+</code></pre>
+<p>&lt; noscript&gt; 元素定义脚本未被执行时的替代内容。</p>
+<p>&lt; base&gt; 元素定义页面中所有链接的默认链接地址或默认目标。</p>
+<pre><code>&lt;head&gt;
+&lt;base href=&quot;http://www.runoob.com/images/&quot; target=&quot;_blank&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<h3 id="十二、HTML样式-CSS"><a href="#十二、HTML样式-CSS" class="headerlink" title="十二、HTML样式-CSS"></a>十二、HTML样式-CSS</h3><p>CSS (Cascading Style Sheets) 是一种用于表现 HTML 文档样式的语言。  </p>
+<h4 id="1、内联样式"><a href="#1、内联样式" class="headerlink" title="1、内联样式"></a>1、内联样式</h4><p style="color:green;margin-left:20px;">这是一个段落。</p>
+
+<pre><code>&lt;p style=&quot;color:blue;margin-left:20px;&quot;&gt;这是一个段落。&lt;/p&gt;
+</code></pre>
+<h4 id="2、背景颜色"><a href="#2、背景颜色" class="headerlink" title="2、背景颜色"></a>2、背景颜色</h4><figure class="highlight plaintext"><figcaption><span>style</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2 style=&quot;background-color:red;&quot;&gt;这是一个标题&lt;/h2&gt;</span><br><span class="line">&lt;p style=&quot;background-color:green;&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<body style="background-color:yellow;">
+<h2 style="background-color:red;">这是一个标题</h2>
+<p style="background-color:green;">这是一个段落。</p>
+</body>
+
+<h4 id="3、字体样式"><a href="#3、字体样式" class="headerlink" title="3、字体样式"></a>3、字体样式</h4><p>font-family（字体），color（颜色），和font-size（字体大小）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 style=&quot;font-family:verdana;&quot;&gt;一个标题&lt;/h1&gt;</span><br><span class="line">&lt;p style=&quot;font-family:arial;color:red;font-size:20px;&quot;&gt;一个段落。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h1 style="font-family:verdana;">一个标题</h1>
+<p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
+
+<h4 id="4、文本样式"><a href="#4、文本样式" class="headerlink" title="4、文本样式"></a>4、文本样式</h4><p>text-align（对齐方式），text-decoration（文本装饰），和line-height（行高）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 style=&quot;text-align:center;&quot;&gt;一个标题&lt;/h1&gt;</span><br><span class="line">&lt;p style=&quot;text-align:right;text-decoration:underline;line-height:2;&quot;&gt;一个段落。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h1 style="text-align:center;">一个标题</h1>
+<p style="text-align:right;text-decoration:underline;line-height:2;">一个段落。</p>
+
+<h3 id="十三、HTML图像"><a href="#十三、HTML图像" class="headerlink" title="十三、HTML图像"></a>十三、HTML图像</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;一个来自文件夹中的图像:&lt;/p&gt;</span><br><span class="line">&lt;img src=&quot;/images/chrome.gif&quot; alt=&quot;Google Chrome&quot; width=&quot;33&quot; height=&quot;32&quot;&gt;&lt;p&gt;一个来自菜鸟教程的图像:&lt;/p&gt;</span><br><span class="line">&lt;img src=&quot;http://www.runoob.com/images/logo.png&quot; alt=&quot;runoob.com&quot; width=&quot;336&quot; height=&quot;69&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>定义图像的语法是：</p>
+<pre><code>&lt;img src=&quot;url&quot; alt=&quot;some_text&quot;&gt;
+</code></pre>
+<p>URL 指存储图像的位置<br>alt 属性用来为图像定义一串预备的可替换的文本。<br>替换文本属性的值是用户定义的</p>
+<p>设置图像的高度与宽度:<br>属性值默认单位为像素:</p>
+<pre><code>&lt;img src=&quot;pulpit.jpg&quot; alt=&quot;Pulpit rock&quot; width=&quot;304&quot; height=&quot;228&quot;&gt;
+</code></pre>
+<h3 id="十四、HTML表格"><a href="#十四、HTML表格" class="headerlink" title="十四、HTML表格"></a>十四、HTML表格</h3><p>HTML表格由 &lt; table&gt; 标签定义。<br>HTML表格由 &lt; tr&gt; 标签定义行，&lt; td&gt; 标签定义单元格,&lt; th&gt;用于定义列的标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">  &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;th&gt;列标题1&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;列标题2&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;列标题3&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/thead&gt;</span><br><span class="line">  &lt;tbody&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;行1，列1&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;行1，列2&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;行1，列3&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;行2，列1&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;行2，列2&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;行2，列3&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+<table>
+  <thead>
+    <tr>
+      <th>列标题1</th>
+      <th>列标题2</th>
+      <th>列标题3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>行1，列1</td>
+      <td>行1，列2</td>
+      <td>行1，列3</td>
+    </tr>
+    <tr>
+      <td>行2，列1</td>
+      <td>行2，列2</td>
+      <td>行2，列3</td>
+    </tr>
+  </tbody>
+</table>
+< thead > 用于定义表格的标题部分  
+< tbody > 用于定义表格的主体部分  
+
+<p> &lt; tfoot &gt; （表格页脚）和 &lt; caption &gt; （表格标题），&lt; tfoot &gt; 可用于在表格的底部定义摘要、统计信息等内容。 &lt; caption &gt; 可用于为整个表格定义标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;row 1, cell 1&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;row 1, cell 2&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;row 2, cell 1&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;row 2, cell 2&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+<table border="1">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+
+<p>边框属性：<br>border</p>
+<h3 id="十五、HTML列表"><a href="#十五、HTML列表" class="headerlink" title="十五、HTML列表"></a>十五、HTML列表</h3><p>无序列表：&lt; ul&gt;<br>粗体圆点（典型的小黑圆圈）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Milk&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<p>有序列表：&lt; ol&gt;<br>数字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Milk&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+<p>自定义列表： &lt; dl&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;Coffee&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;- black hot drink&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;Milk&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;- white cold drink&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+<p>&lt; li&gt;定义列表项</p>
+<p> &lt; dt&gt; 定义列表项的标题</p>
+<p> &lt; dd&gt; 定义列表项的内容</p>
+<h3 id="十六、HTML区块"><a href="#十六、HTML区块" class="headerlink" title="十六、HTML区块"></a>十六、HTML区块</h3><p> &lt; div&gt;可用于对大的内容块设置样式属性，文档布局</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;color:#0000FF&quot;&gt;</span><br><span class="line">  &lt;h3&gt;这是一个在 div 元素中的标题。&lt;/h3&gt;</span><br><span class="line">  &lt;p&gt;这是一个在 div 元素中的文本。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<div style="color:#0000FF">
+  <h3>这是一个在 div 元素中的标题。</h3>
+  <p>这是一个在 div 元素中的文本。</p>
+</div>
+
+<p>&lt; span&gt;可用于为部分文本设置样式属性</p>
+<h3 id="十七、HTML布局"><a href="#十七、HTML布局" class="headerlink" title="十七、HTML布局"></a>十七、HTML布局</h3><p>使用&lt; div&gt; 元素</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt; </span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt; </span><br><span class="line">&lt;title&gt;芜湖~(runoob.com)&lt;/title&gt; </span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id=&quot;container&quot; style=&quot;width:500px&quot;&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id=&quot;header&quot; style=&quot;background-color:#FFA500;&quot;&gt;</span><br><span class="line">&lt;h1 style=&quot;margin-bottom:0;&quot;&gt;网页标题&lt;/h1&gt;&lt;/div&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id=&quot;menu&quot; style=&quot;background-color:#FFD700;height:200px;width:100px;float:left;&quot;&gt;</span><br><span class="line">&lt;b&gt;菜单&lt;/b&gt;&lt;br&gt;</span><br><span class="line">HTML&lt;br&gt;</span><br><span class="line">CSS&lt;br&gt;</span><br><span class="line">JavaScript&lt;/div&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id=&quot;content&quot; style=&quot;background-color:#EEEEEE;height:200px;width:400px;float:left;&quot;&gt;</span><br><span class="line">内容&lt;/div&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id=&quot;footer&quot; style=&quot;background-color:#FFA500;clear:both;text-align:center;&quot;&gt;</span><br><span class="line">版权 © xxxx.com&lt;/div&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/div&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="十八、HTML表单"><a href="#十八、HTML表单" class="headerlink" title="十八、HTML表单"></a>十八、HTML表单</h3><p>将用户收集到的信息发送到 Web 服务器</p>
+<p>*&lt; form&gt; 元素用于创建表单，action 属性定义了表单数据提交的目标 URL，method 属性定义了提交数据的 HTTP 方法（这里使用的是 “post”）</p>
+<p>*&lt; input&gt; 元素是最常用的表单元素之一，它可以创建文本输入框、密码框、单选按钮、复选框等。type 属性定义了输入框的类型，id 属性用于关联 <label> 元素，name 属性用于标识表单字段</p>
+<p>*&lt; label&gt; 元素用于为表单元素添加标签，提高可访问性</p>
+<p>*&lt; select&gt; 元素用于创建下拉列表，而 <option> 元素用于定义下拉列表中的选项</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=&quot;/&quot; method=&quot;post&quot;&gt;</span><br><span class="line">    &lt;!-- 文本输入框 --&gt;</span><br><span class="line">    &lt;label for=&quot;name&quot;&gt;用户名:&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;</span><br><span class="line"></span><br><span class="line">    &lt;br&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 密码输入框 --&gt;</span><br><span class="line">    &lt;label for=&quot;password&quot;&gt;密码:&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;</span><br><span class="line"></span><br><span class="line">    &lt;br&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 单选按钮 --&gt;</span><br><span class="line">    &lt;label&gt;性别:&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot; checked&gt;</span><br><span class="line">    &lt;label for=&quot;male&quot;&gt;男&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;</span><br><span class="line">    &lt;label for=&quot;female&quot;&gt;女&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">    &lt;br&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 复选框 --&gt;</span><br><span class="line">    &lt;input type=&quot;checkbox&quot; id=&quot;subscribe&quot; name=&quot;subscribe&quot; checked&gt;</span><br><span class="line">    &lt;label for=&quot;subscribe&quot;&gt;订阅推送信息&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">    &lt;br&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 下拉列表 --&gt;</span><br><span class="line">    &lt;label for=&quot;country&quot;&gt;国家:&lt;/label&gt;</span><br><span class="line">    &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;</span><br><span class="line">        &lt;option value=&quot;cn&quot;&gt;CN&lt;/option&gt;</span><br><span class="line">        &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;</span><br><span class="line">        &lt;option value=&quot;uk&quot;&gt;UK&lt;/option&gt;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;br&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 提交按钮 --&gt;</span><br><span class="line">    &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<p>使用 &lt; form&gt; 标签来创建表单<br>多数情况下被用到的表单标签是输入标签 &lt; input&gt;。<br>输入类型是由 type 属性定义。</p>
+<p>文本域：<br>通过 &lt; input type&#x3D;”text”&gt; 标签来设定，要在表单中键入字母、数字等内容时，就会用到文本域。</p>
+<p>密码框：<br>通过 &lt; input type&#x3D;”password”&gt; 标签来设定，密码框中输入的字符会被替换为星号。</p>
+<p>单选按钮：<br>通过 &lt; input type&#x3D;”radio”&gt; 标签来设定，单选按钮组中只有一个按钮可以被选中。</p>
+<p>复选框：<br>通过 &lt; input type&#x3D;”checkbox”&gt; 标签来设定，复选框组中可以选择多个选项。</p>
+<p>下拉列表：<br>通过 &lt; select&gt; 和 &lt; option&gt; 标签来设定，下拉列表中可以选择多个选项。</p>
+<p>提交按钮：<br>通过 &lt; input type&#x3D;”submit”&gt; 标签来设定，提交按钮用于提交表单。</p>
+<h3 id="十九、HTML框架"><a href="#十九、HTML框架" class="headerlink" title="十九、HTML框架"></a>十九、HTML框架</h3><p>使用框架，可以在同一个浏览器窗口中显示不止一个页面<br>iframe语法:<br>    <iframe src="URL"></iframe></p>
+<p>该URL指向不同的网页</p>
+<h3 id="二十、HTML颜色"><a href="#二十、HTML颜色" class="headerlink" title="二十、HTML颜色"></a>二十、HTML颜色</h3><p>HTML 颜色由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成（RGB）。</p>
+<p>每种颜色的最小值是0（十六进制：#00）。最大值是255（十六进制：#FF）。</p>
+<img src="/images/颜色值.png" width="258" height="39"  loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'/>
+
+<h3 id="二十一、HTML脚本"><a href="#二十一、HTML脚本" class="headerlink" title="二十一、HTML脚本"></a>二十一、HTML脚本</h3><p>&lt; script&gt; 标签用于定义客户端脚本，比如 JavaScript，既可包含脚本语句，也可通过 src 属性指向外部脚本文件。  </p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/05/14/hello-world/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E6%8A%80%E6%9C%AF/">
+                    技术
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/05/14/hello-world/" class="trm-anima-link">
+                    Hello World
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/05/14</li>
+                <li>20:53</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024- 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">Ellleven</span>
+        </div>
+    
+
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="/js/plugins/typing.js?v=2.1.15"></script>
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+			<script src="/js/plugins/danmu.js?v=2.1.15"></script>
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=2.1.15"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+</body>
+
+</html>
